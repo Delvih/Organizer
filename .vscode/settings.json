@@ -1,4 +1,5 @@
 {
     "files.autoSave": "afterDelay",
-    "editor.fontSize": 17
+    "editor.fontSize": 17,
+    "editor.tabSize": 2
 }
