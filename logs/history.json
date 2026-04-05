@@ -1,0 +1,167 @@
+[
+  {
+    "timestamp": "2026-04-02T12:40:22.283280",
+    "operation": "organize_all",
+    "result": {
+      "status": "error",
+      "message": "Source directory не существует: \\c\\Users\\admin\\Downloads"
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:40:46.022079",
+    "operation": "organize_all",
+    "result": {
+      "status": "error",
+      "message": "Source directory не существует: \\c\\Users\\admin\\Downloads"
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:47:51.186142",
+    "operation": "organize_all",
+    "result": {
+      "status": "success",
+      "total": 6,
+      "results": [
+        {
+          "status": "success",
+          "message": "Файл перемещен в Other",
+          "filename": "app.py",
+          "category": "other",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app.py"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Other",
+          "filename": "app_improved.py",
+          "category": "other",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app_improved.py"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Other",
+          "filename": "desktop.ini",
+          "category": "other",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\desktop.ini"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Other",
+          "filename": "DISTRIBUTION_GUIDE.md",
+          "category": "other",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\DISTRIBUTION_GUIDE.md"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Archives",
+          "filename": "files.zip",
+          "category": "archives",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Archives\\files.zip"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Other",
+          "filename": "SUMMARY.md",
+          "category": "other",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\SUMMARY.md"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-04-02T12:48:21.495098",
+    "operation": "organize_all",
+    "result": {
+      "status": "success",
+      "total": 0,
+      "results": []
+    }
+  },
+  {
+    "timestamp": "2026-04-03T07:51:24.739110",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "index.html",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\index.html"
+    }
+  },
+  {
+    "timestamp": "2026-04-03T07:51:31.834195",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "style.css",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\style.css"
+    }
+  },
+  {
+    "timestamp": "2026-04-03T08:17:35.920352",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "app.py",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app_copy_20260403_081735.py"
+    }
+  },
+  {
+    "timestamp": "2026-04-03T08:17:52.303228",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "app_improved.py",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app_improved_copy_20260403_081752.py"
+    }
+  },
+  {
+    "timestamp": "2026-04-03T08:17:58.829773",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "DISTRIBUTION_GUIDE.md",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\DISTRIBUTION_GUIDE_copy_20260403_081758.md"
+    }
+  },
+  {
+    "timestamp": "2026-04-03T08:18:02.450991",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "index.html",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\index_copy_20260403_081802.html"
+    }
+  },
+  {
+    "timestamp": "2026-04-03T08:18:04.175712",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "style.css",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\style_copy_20260403_081804.css"
+    }
+  },
+  {
+    "timestamp": "2026-04-03T08:18:05.340795",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Other",
+      "filename": "SUMMARY.md",
+      "category": "other",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\SUMMARY_copy_20260403_081805.md"
+    }
+  }
+]

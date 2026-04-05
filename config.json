@@ -1,0 +1,54 @@
+{
+    "app": {
+        "name": "File Organizer Pro",
+        "version": "1.0.0",
+        "debug": false,
+        "host": "localhost",
+        "port": 5000,
+        "cors_origins": ["http://localhost:3000", "http://localhost:5000", "http://127.0.0.1:5500"]
+    },
+    "paths": {
+        "source_directory": "C:/Users/admin/Downloads",
+        "destination_directory": "C:/Users/admin/Documents/SortedFiles",
+        "log_file": "./logs/organizer.log"
+    },
+    "file_rules": {
+        "images": {
+            "extensions": ["jpg", "jpeg", "png", "gif", "bmp", "svg", "webp"],
+            "subfolder": "Images"
+        },
+        "documents": {
+            "extensions": ["pdf", "docx", "txt", "xlsx", "pptx", "doc", "xls"],
+            "subfolder": "Documents"
+        },
+        "videos": {
+            "extensions": ["mp4", "avi", "mkv", "mov", "wmv", "flv"],
+            "subfolder": "Videos"
+        },
+        "music": {
+            "extensions": ["mp3", "wav", "flac", "aac", "ogg", "m4a"],
+            "subfolder": "Music"
+        },
+        "archives": {
+            "extensions": ["zip", "rar", "7z", "tar", "gz", "bz2"],
+            "subfolder": "Archives"
+        },
+        "other": {
+            "extensions": [],
+            "subfolder": "Other"
+        }
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "max_bytes": 10485760,
+        "backup_count": 5
+    },
+    "features": {
+        "auto_organize_on_startup": true,
+        "watch_directory": false,
+        "create_folders_if_not_exist": true,
+        "override_existing_files": false,
+        "keep_original_structure": false
+    }
+}

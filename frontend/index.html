@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Organizer Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="header-content">
+                <div class="header-logo">
+                    <span class="logo-mark">FO</span>
+                    <div class="logo-text">
+                        <span class="logo-title">File Organizer</span>
+                        <span class="logo-version">PRO v1.0</span>
+                    </div>
+                </div>
+                <p class="subtitle" data-i18n="subtitle">Умная система организации файлов</p>
+            </div>
+            <div class="header-right">
+                <select id="langSwitcher" class="lang-switcher">
+                    <option value="ru">RU — Русский</option>
+                    <option value="en">EN — English</option>
+                    <option value="pt">PT — Português</option>
+                    <option value="es">ES — Español</option>
+                    <option value="zh">ZH — 中文</option>
+                </select>
+                <div class="status-indicator" id="statusIndicator">
+                    <span class="status-dot"></span>
+                    <span id="statusText" data-i18n="connecting">Подключение...</span>
+                </div>
+                <button id="shutdownBtn" class="btn btn-danger" data-i18n="stopServer">Остановить</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+
+            <section class="control-panel">
+                <div class="panel-label" data-i18n="controls">Управление</div>
+                <div class="button-group">
+                    <button id="startBtn" class="btn btn-primary">
+                        <span data-i18n="organizeAll">Организовать все файлы</span>
+                    </button>
+                    <button id="startSingleBtn" class="btn btn-secondary">
+                        <span data-i18n="selectFile">Выбрать файл</span>
+                    </button>
+                    <button id="refreshBtn" class="btn btn-ghost">
+                        <span data-i18n="refresh">Обновить</span>
+                    </button>
+                </div>
+                <div class="interval-row">
+                    <span class="interval-label"><span data-i18n="intervalLabel">Интервал сканирования</span></span>
+                    <select id="intervalSelect" class="interval-select">
+                        <option value="5000"   data-i18n="int5s">5 секунд</option>
+                        <option value="10000"  data-i18n="int10s">10 секунд</option>
+                        <option value="30000"  data-i18n="int30s">30 секунд</option>
+                        <option value="60000"  data-i18n="int1m">1 минута</option>
+                        <option value="300000" data-i18n="int5m">5 минут</option>
+                        <option value="0"      data-i18n="intOff">Выключено</option>
+                    </select>
+                    <span class="interval-status" id="intervalStatus"></span>
+                </div>
+            </section>
+
+            <div class="content-grid">
+
+                <section class="section files-section">
+                    <div class="section-header">
+                        <div class="section-title">
+                            <span class="section-tag">01</span>
+                            <h2 data-i18n="filesTitle">Файлы в загрузках</h2>
+                        </div>
+                        <span class="badge" id="fileCount">0</span>
+                    </div>
+                    <div class="filters">
+                        <input type="text" id="searchInput" class="search-input"
+                            data-i18n-placeholder="searchPlaceholder"
+                            placeholder="Поиск файлов...">
+                        <select id="categoryFilter" class="filter-select">
+                            <option value=""          data-i18n="allCategories">Все категории</option>
+                            <option value="images"    data-i18n="catImages">Изображения</option>
+                            <option value="documents" data-i18n="catDocuments">Документы</option>
+                            <option value="videos"    data-i18n="catVideos">Видео</option>
+                            <option value="music"     data-i18n="catMusic">Музыка</option>
+                            <option value="archives"  data-i18n="catArchives">Архивы</option>
+                            <option value="other"     data-i18n="catOther">Другое</option>
+                        </select>
+                    </div>
+                    <div class="files-list" id="filesList">
+                        <div class="loading" data-i18n="loading">Загрузка файлов...</div>
+                    </div>
+                </section>
+
+                <section class="section stats-section">
+                    <div class="section-header">
+                        <div class="section-title">
+                            <span class="section-tag">02</span>
+                            <h2 data-i18n="stats">Статистика</h2>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-label" data-i18n="totalFiles">Всего файлов</div>
+                            <div class="stat-value" id="totalFiles">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label" data-i18n="totalSize">Общий размер</div>
+                            <div class="stat-value" id="totalSize">0 B</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label" data-i18n="organized">Организовано</div>
+                            <div class="stat-value" id="organizedCount">0</div>
+                        </div>
+                    </div>
+                    <div class="category-distribution">
+                        <div class="dist-label" data-i18n="distribution">Распределение по типам</div>
+                        <div class="category-list" id="categoryList"></div>
+                    </div>
+                </section>
+
+            </div>
+
+            <section class="section log-section">
+                <div class="section-header">
+                    <div class="section-title">
+                        <span class="section-tag">03</span>
+                        <h2 data-i18n="history">История операций</h2>
+                    </div>
+                    <button id="clearLogBtn" class="btn btn-ghost btn-sm" data-i18n="clear">Очистить</button>
+                </div>
+                <div class="log-container" id="logContainer">
+                    <div class="log-empty" data-i18n="noHistory">История пуста</div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- File modal -->
+    <div id="fileModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="modalTitle">Выберите файл для организации</h2>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-files" id="modalFiles"></div>
+        </div>
+    </div>
+
+    <!-- Shutdown confirm modal -->
+    <div id="shutdownModal" class="modal">
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <h2 data-i18n="shutdownTitle">Остановить сервер?</h2>
+                <button class="close" id="shutdownClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p data-i18n="shutdownDesc">Приложение будет остановлено. Браузер отключится от сервера.</p>
+                <div class="modal-actions">
+                    <button id="shutdownConfirm" class="btn btn-danger" data-i18n="shutdownConfirm">Остановить</button>
+                    <button id="shutdownCancel" class="btn btn-ghost" data-i18n="shutdownCancel">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offline overlay -->
+    <div id="offlineOverlay" class="offline-overlay" style="display:none;">
+        <div class="offline-box">
+            <div class="offline-logo">FO</div>
+            <h2 class="offline-title">File Organizer Pro</h2>
+            <p class="offline-desc" data-i18n="offlineDesc">Сервер не запущен. Запустите приложение чтобы начать работу.</p>
+            <div class="offline-steps">
+                <div class="offline-step">
+                    <span class="step-num">1</span>
+                    <span data-i18n="offlineStep1">Дважды кликните на <strong>start.bat</strong> в папке проекта</span>
+                </div>
+                <div class="offline-step">
+                    <span class="step-num">2</span>
+                    <span data-i18n="offlineStep2">Дождитесь запуска — браузер откроется автоматически</span>
+                </div>
+                <div class="offline-step">
+                    <span class="step-num">3</span>
+                    <span data-i18n="offlineStep3">Для остановки нажмите кнопку "Остановить" в шапке</span>
+                </div>
+            </div>
+            <button id="retryBtn" class="btn btn-primary offline-retry" data-i18n="retryConnect">
+                Повторить подключение
+            </button>
+            <p class="offline-hint" data-i18n="offlineHint">Сервер запущен? Нажмите кнопку выше.</p>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
