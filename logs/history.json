@@ -337,5 +337,78 @@
       "status": "error",
       "message": "Файл не найден: Git-comand_.docx"
     }
+  },
+  {
+    "timestamp": "2026-04-06T07:51:25.491240",
+    "operation": "organize_all",
+    "result": {
+      "status": "success",
+      "total": 9,
+      "results": [
+        {
+          "status": "success",
+          "message": "Файл перемещен в Documents",
+          "filename": "Git-comand — копия.docx",
+          "category": "documents",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\Git-comand — копия.docx"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Documents",
+          "filename": "git-sequence — копия.docx",
+          "category": "documents",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\git-sequence — копия.docx"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Archives",
+          "filename": "test-archive.zip",
+          "category": "archives",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Archives\\test-archive.zip"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Documents",
+          "filename": "test-document.pdf",
+          "category": "documents",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\test-document.pdf"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Images",
+          "filename": "test-image.jpg",
+          "category": "images",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Images\\test-image.jpg"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Music",
+          "filename": "test-music.mp3",
+          "category": "music",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Music\\test-music.mp3"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Videos",
+          "filename": "test-video.mp4",
+          "category": "videos",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Videos\\test-video.mp4"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Documents",
+          "filename": "Аудитория_социальных_медиа_Mediascope.pdf",
+          "category": "documents",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\Аудитория_социальных_медиа_Mediascope.pdf"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Documents",
+          "filename": "Насыщенность — копия.docx",
+          "category": "documents",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\Насыщенность — копия.docx"
+        }
+      ]
+    }
   }
 ]

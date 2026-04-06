@@ -4,6 +4,7 @@ const LOG_LIMIT = 50;
 
 let scanIntervalMs = parseInt(localStorage.getItem('scanInterval') ?? '10000');
 let scanIntervalId = null;
+let historyIntervalId = null;
 let healthIntervalId = null;
 
 // ==================== ПЕРЕВОДЫ ====================
@@ -213,11 +214,12 @@ function applyLang() {
 
 function startScanIntervals() {
     if (scanIntervalId) clearInterval(scanIntervalId);
+    if (historyIntervalId) clearInterval(historyIntervalId);
     if (healthIntervalId) clearInterval(healthIntervalId);
 
     if (scanIntervalMs > 0) {
         scanIntervalId = setInterval(fetchFiles, scanIntervalMs);
-        scanIntervalId = setInterval(fetchHistory, scanIntervalMs);
+        historyIntervalId = setInterval(fetchHistory, scanIntervalMs);
     }
     healthIntervalId = setInterval(checkHealth, 30000);
     updateIntervalStatus();
@@ -330,6 +332,7 @@ async function fetchFiles() {
         appState.files = result.files || [];
         updateFilesList();
         updateStats();
+        attachFileListeners();
     }
     
     appState.isLoading = false;
