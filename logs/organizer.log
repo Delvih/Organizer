@@ -26,3 +26,31 @@
 2026-04-05 07:22:47,064 - app - INFO - Запуск приложения File Organizer Pro
 2026-04-05 07:26:48,464 - app - INFO - Запуск приложения File Organizer Pro
 2026-04-05 10:05:21,821 - app - INFO - Запуск приложения File Organizer Pro
+2026-04-06 07:10:08,113 - app - INFO - FileOrganizer инициализирован успешно
+2026-04-06 07:10:08,117 - app - INFO - Запуск приложения File Organizer Pro
+2026-04-06 07:33:30,360 - app - ERROR - Ошибка при организации файла: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2026-04-06 07:38:19,517 - app - INFO - Организован файл: archive.zip - success
+2026-04-06 07:38:19,520 - app - INFO - Организован файл: document.pdf - success
+2026-04-06 07:38:19,521 - app - INFO - Организован файл: Git-comand — копия.docx - error
+2026-04-06 07:38:19,521 - app - INFO - Организован файл: git-sequence — копия.docx - error
+2026-04-06 07:38:19,525 - app - INFO - Организован файл: music.mp3 - success
+2026-04-06 07:38:19,528 - app - INFO - Организован файл: video.mp4 - success
+2026-04-06 07:38:19,528 - app - INFO - Организован файл: Аудитория_социальных_медиа_Mediascope.pdf - error
+2026-04-06 07:38:19,530 - app - INFO - Организован файл: Насыщенность — копия.docx - error
+2026-04-06 07:38:26,235 - app - INFO - Организован файл: Git-comand — копия.docx - error
+2026-04-06 07:38:26,236 - app - INFO - Организован файл: git-sequence — копия.docx - error
+2026-04-06 07:38:26,236 - app - INFO - Организован файл: Аудитория_социальных_медиа_Mediascope.pdf - error
+2026-04-06 07:38:26,237 - app - INFO - Организован файл: Насыщенность — копия.docx - error
+2026-04-06 07:41:54,093 - app - INFO - Организован файл: Git-comand — копия.docx - error
+2026-04-06 07:41:54,094 - app - INFO - Организован файл: git-sequence — копия.docx - error
+2026-04-06 07:41:54,095 - app - INFO - Организован файл: test-archive.zip - success
+2026-04-06 07:41:54,097 - app - INFO - Организован файл: test-document.pdf - success
+2026-04-06 07:41:54,098 - app - INFO - Организован файл: test-image.jpg - success
+2026-04-06 07:41:54,100 - app - INFO - Организован файл: test-music.mp3 - success
+2026-04-06 07:41:54,101 - app - INFO - Организован файл: test-video.mp4 - success
+2026-04-06 07:41:54,102 - app - INFO - Организован файл: Аудитория_социальных_медиа_Mediascope.pdf - error
+2026-04-06 07:41:54,102 - app - INFO - Организован файл: Насыщенность — копия.docx - error
+2026-04-06 07:42:00,298 - app - INFO - Организован файл: Git-comand — копия.docx - error
+2026-04-06 07:42:00,299 - app - INFO - Организован файл: git-sequence — копия.docx - error
+2026-04-06 07:42:00,301 - app - INFO - Организован файл: Аудитория_социальных_медиа_Mediascope.pdf - error
+2026-04-06 07:42:00,302 - app - INFO - Организован файл: Насыщенность — копия.docx - error

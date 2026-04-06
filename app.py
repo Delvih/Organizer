@@ -128,8 +128,11 @@ class FileOrganizer:
     def organize_file(self, filename: str) -> Dict[str, Any]:
         """Перемещает файл в соответствующую папку"""
         try:
-            # Валидация имени файла
-            filename = secure_filename(filename)
+            # Валидация имени файла - проверяем на опасные символы
+            # но НЕ используем secure_filename, который портит кириллицу
+            if '..' in filename or '/' in filename or '\\' in filename:
+                return {'status': 'error', 'message': f'Недопустимое имя файла: {filename}'}
+            
             src_path = self.src_dir / filename
             
             # Проверки безопасности

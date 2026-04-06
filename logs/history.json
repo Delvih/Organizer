@@ -1,167 +1,341 @@
 [
   {
-    "timestamp": "2026-04-02T12:40:22.283280",
-    "operation": "organize_all",
+    "timestamp": "2026-04-06T07:20:59.663786",
+    "operation": "organize_single",
     "result": {
       "status": "error",
-      "message": "Source directory не существует: \\c\\Users\\admin\\Downloads"
+      "message": "Файл не найден: Git-comand_.docx"
     }
   },
   {
-    "timestamp": "2026-04-02T12:40:46.022079",
-    "operation": "organize_all",
+    "timestamp": "2026-04-06T07:21:16.594118",
+    "operation": "organize_single",
     "result": {
       "status": "error",
-      "message": "Source directory не существует: \\c\\Users\\admin\\Downloads"
+      "message": "Файл не найден: Git-comand_.docx"
     }
   },
   {
-    "timestamp": "2026-04-02T12:47:51.186142",
+    "timestamp": "2026-04-06T07:21:24.531397",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:21:28.343795",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: Git-comand_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:21:49.711167",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: Git-comand_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:21:51.056032",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: git-sequence_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:21:53.271547",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: Mediascope.pdf"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:21:55.109400",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:23:37.262815",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: Git-comand_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:28:00.475615",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: Git-comand_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:29:07.834271",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: Git-comand_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:33:57.247216",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Archives",
+      "filename": "archive.zip",
+      "category": "archives",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Archives\\archive.zip"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:33:58.729013",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Documents",
+      "filename": "document.pdf",
+      "category": "documents",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\document.pdf"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:33:59.915422",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: Git-comand_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:34:04.529028",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: git-sequence_.docx"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:34:07.670197",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Images",
+      "filename": "image.jpg",
+      "category": "images",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Images\\image.jpg"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:34:15.439008",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: image.jpg"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:36:29.014513",
+    "operation": "organize_single",
+    "result": {
+      "status": "error",
+      "message": "Файл не найден: image.jpg"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:38:11.681103",
+    "operation": "organize_single",
+    "result": {
+      "status": "success",
+      "message": "Файл перемещен в Images",
+      "filename": "image.jpg",
+      "category": "images",
+      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Images\\image_copy_20260406_073811.jpg"
+    }
+  },
+  {
+    "timestamp": "2026-04-06T07:38:19.530313",
     "operation": "organize_all",
     "result": {
       "status": "success",
-      "total": 6,
+      "total": 8,
       "results": [
         {
           "status": "success",
-          "message": "Файл перемещен в Other",
-          "filename": "app.py",
-          "category": "other",
-          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app.py"
-        },
-        {
-          "status": "success",
-          "message": "Файл перемещен в Other",
-          "filename": "app_improved.py",
-          "category": "other",
-          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app_improved.py"
-        },
-        {
-          "status": "success",
-          "message": "Файл перемещен в Other",
-          "filename": "desktop.ini",
-          "category": "other",
-          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\desktop.ini"
-        },
-        {
-          "status": "success",
-          "message": "Файл перемещен в Other",
-          "filename": "DISTRIBUTION_GUIDE.md",
-          "category": "other",
-          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\DISTRIBUTION_GUIDE.md"
-        },
-        {
-          "status": "success",
           "message": "Файл перемещен в Archives",
-          "filename": "files.zip",
+          "filename": "archive.zip",
           "category": "archives",
-          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Archives\\files.zip"
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Archives\\archive_copy_20260406_073819.zip"
         },
         {
           "status": "success",
-          "message": "Файл перемещен в Other",
-          "filename": "SUMMARY.md",
-          "category": "other",
-          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\SUMMARY.md"
+          "message": "Файл перемещен в Documents",
+          "filename": "document.pdf",
+          "category": "documents",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\document_copy_20260406_073819.pdf"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: Git-comand_.docx"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: git-sequence_.docx"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Music",
+          "filename": "music.mp3",
+          "category": "music",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Music\\music.mp3"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Videos",
+          "filename": "video.mp4",
+          "category": "videos",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Videos\\video.mp4"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: Mediascope.pdf"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: docx"
         }
       ]
     }
   },
   {
-    "timestamp": "2026-04-02T12:48:21.495098",
+    "timestamp": "2026-04-06T07:38:26.237531",
     "operation": "organize_all",
     "result": {
       "status": "success",
-      "total": 0,
-      "results": []
+      "total": 4,
+      "results": [
+        {
+          "status": "error",
+          "message": "Файл не найден: Git-comand_.docx"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: git-sequence_.docx"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: Mediascope.pdf"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: docx"
+        }
+      ]
     }
   },
   {
-    "timestamp": "2026-04-03T07:51:24.739110",
-    "operation": "organize_single",
+    "timestamp": "2026-04-06T07:41:54.103135",
+    "operation": "organize_all",
     "result": {
       "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "index.html",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\index.html"
+      "total": 9,
+      "results": [
+        {
+          "status": "error",
+          "message": "Файл не найден: Git-comand_.docx"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: git-sequence_.docx"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Archives",
+          "filename": "test-archive.zip",
+          "category": "archives",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Archives\\test-archive.zip"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Documents",
+          "filename": "test-document.pdf",
+          "category": "documents",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Documents\\test-document.pdf"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Images",
+          "filename": "test-image.jpg",
+          "category": "images",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Images\\test-image.jpg"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Music",
+          "filename": "test-music.mp3",
+          "category": "music",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Music\\test-music.mp3"
+        },
+        {
+          "status": "success",
+          "message": "Файл перемещен в Videos",
+          "filename": "test-video.mp4",
+          "category": "videos",
+          "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Videos\\test-video.mp4"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: Mediascope.pdf"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: docx"
+        }
+      ]
     }
   },
   {
-    "timestamp": "2026-04-03T07:51:31.834195",
-    "operation": "organize_single",
+    "timestamp": "2026-04-06T07:42:00.303458",
+    "operation": "organize_all",
     "result": {
       "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "style.css",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\style.css"
+      "total": 4,
+      "results": [
+        {
+          "status": "error",
+          "message": "Файл не найден: Git-comand_.docx"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: git-sequence_.docx"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: Mediascope.pdf"
+        },
+        {
+          "status": "error",
+          "message": "Файл не найден: docx"
+        }
+      ]
     }
   },
   {
-    "timestamp": "2026-04-03T08:17:35.920352",
+    "timestamp": "2026-04-06T07:42:05.273659",
     "operation": "organize_single",
     "result": {
-      "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "app.py",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app_copy_20260403_081735.py"
-    }
-  },
-  {
-    "timestamp": "2026-04-03T08:17:52.303228",
-    "operation": "organize_single",
-    "result": {
-      "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "app_improved.py",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\app_improved_copy_20260403_081752.py"
-    }
-  },
-  {
-    "timestamp": "2026-04-03T08:17:58.829773",
-    "operation": "organize_single",
-    "result": {
-      "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "DISTRIBUTION_GUIDE.md",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\DISTRIBUTION_GUIDE_copy_20260403_081758.md"
-    }
-  },
-  {
-    "timestamp": "2026-04-03T08:18:02.450991",
-    "operation": "organize_single",
-    "result": {
-      "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "index.html",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\index_copy_20260403_081802.html"
-    }
-  },
-  {
-    "timestamp": "2026-04-03T08:18:04.175712",
-    "operation": "organize_single",
-    "result": {
-      "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "style.css",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\style_copy_20260403_081804.css"
-    }
-  },
-  {
-    "timestamp": "2026-04-03T08:18:05.340795",
-    "operation": "organize_single",
-    "result": {
-      "status": "success",
-      "message": "Файл перемещен в Other",
-      "filename": "SUMMARY.md",
-      "category": "other",
-      "destination": "C:\\Users\\admin\\Documents\\SortedFiles\\Other\\SUMMARY_copy_20260403_081805.md"
+      "status": "error",
+      "message": "Файл не найден: Git-comand_.docx"
     }
   }
 ]

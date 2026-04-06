@@ -426,7 +426,7 @@ function updateFilesList() {
                 <span class="file-category">${file.category}</span>
             </div>
             <div class="file-actions">
-                <button class="btn-organize" onclick="organizeSingleFile('${file.name}')">
+                <button class="btn-organize btn-organize-file" data-filename="${btoa(file.name)}">
                     ${t('organizeBtn')}
                 </button>
             </div>
@@ -541,7 +541,7 @@ function updateModalFiles() {
     
     modalFiles.innerHTML = appState.files
         .map(file => `
-            <div class="modal-file-item" onclick="organizeSingleFile('${file.name}'); closeModal()">
+            <div class="modal-file-item modal-file-organize" data-filename="${btoa(file.name)}">
                 <div style="font-weight: 600;">${file.name}</div>
                 <div style="font-size: 0.85rem; color: var(--text-secondary);">
                     ${file.category} • ${formatFileSize(file.size)}
